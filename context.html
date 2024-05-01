@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 7</title>
+</head>
+<body>
+
+    <h2>Запись на курсы</h2>
+    <form action="server.php" method="POST">
+        <label for="username">Имя:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Отправить">
+        <input type="button" value="Очистить" onclick="clearForm()">
+    </form>
+
+    <script>
+        function clearForm() {
+            document.getElementById("username").value = "";
+            document.getElementById("email").value = "";
+        }
+    </script>
+</body>
+</html>
